@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 
@@ -113,95 +113,107 @@
 			background-color: #ffc107;
 		}
 
-		 /* ===== Testimonials Section ===== */	 
+		/* ===== Testimonials Section ===== */
 		#testimonials .section-title {
-		text-align: center;
-		margin-bottom: 40px;
+			text-align: center;
+			margin-bottom: 40px;
 		}
 
 		.testimonials-slider {
-		position: relative;
-		overflow: hidden;
+			position: relative;
+			overflow: hidden;
 		}
+
 		.slides {
-		display: flex;
-		transition: transform 0.6s ease;
+			display: flex;
+			transition: transform 0.6s ease;
 		}
+
 		.slide {
-		flex: 0 0 100%;
-		box-sizing: border-box;
-		padding: 20px;
+			flex: 0 0 100%;
+			box-sizing: border-box;
+			padding: 20px;
 		}
 
 		/* Ensure all testimonial items are same height */
 		.testimonial-item {
-		padding: 30px;
-		border-radius: 8px;
-		box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-		max-width: 600px;
-		margin: auto;
-		text-align: center;
-		height: 500px;           /* fixed height */
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between; /* distribute content */
+			padding: 30px;
+			border-radius: 8px;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+			max-width: 600px;
+			margin: auto;
+			text-align: center;
+			height: 500px;
+			/* fixed height */
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			/* distribute content */
 		}
+
 		.testimonial-img {
-		width: 120px;
-		height: 120px;
-		border-radius: 50%;
-		object-fit: cover;
-		margin: 0 auto 15px;
-		flex-shrink: 0;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin: 0 auto 15px;
+			flex-shrink: 0;
 		}
+
 		.testimonial-item h3 {
-		margin: 10px 0 5px;
-		font-size: 20px;
-		color: white;
-		flex-shrink: 0;
+			margin: 10px 0 5px;
+			font-size: 20px;
+			color: white;
+			flex-shrink: 0;
 		}
+
 		.testimonial-item h4 {
-		font-size: 14px;
-		color: white;
-		margin-bottom: 15px;
-		flex-shrink: 0;
+			font-size: 14px;
+			color: rgb(145, 145, 145);
+			margin-bottom: 15px;
+			flex-shrink: 0;
 		}
+
 		.stars {
-		margin-bottom: 15px;
-		flex-shrink: 0;
+			margin-bottom: 15px;
+			flex-shrink: 0;
 		}
+
 		.stars span {
-		color: #ffc107;
-		font-size: 18px;
-		margin-right: 3px;
+			color: #ffc107;
+			font-size: 18px;
+			margin-right: 3px;
 		}
+
 		.testimonial-text {
-		color: white;
-		margin-bottom: 15px;
-		overflow: hidden;
-		/* limit text to fit within box */
-		display: -webkit-box;
-		-webkit-line-clamp: 6;
-		-webkit-box-orient: vertical;
+			color: white;
+			margin-bottom: 15px;
+			overflow: hidden;
+			/* limit text to fit within box */
+			display: -webkit-box;
+			-webkit-line-clamp: 6;
+			-webkit-box-orient: vertical;
 		}
 
 		.pagination {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 50px;
-		gap: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 50px;
+			gap: 10px;
 		}
+
 		.bullet {
-		width: 12px;
-		height: 12px;
-		background: #ddd;
-		border-radius: 50%;
-		cursor: pointer;
-		transition: background 0.3s ease;
+			width: 12px;
+			height: 12px;
+			background: #ddd;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background 0.3s ease;
 		}
+
 		.bullet.active {
-		background: #ffc107;
+			background: #ffc107;
 		}
 	</style>
 
@@ -690,33 +702,35 @@
 	</section>
 
 	<section class="ftco-section contact-section ftco-no-pb" id="testimonials">
-		<div class="container">
-		  <!-- Section Title -->
-		  <div class="row">
-			  <div class="col-md-10 mx-auto heading-section text-center ftco-animate">
-				  <h2 class="mb-4" style="color: #ffc107; font-size: 60px;">Testimonials</h2>
-			  </div>
-		  </div>
-		
-		  <div class="testimonials-slider">
-			<div class="slides">
-			  <!-- Slide 1 -->
-			  <div class="slide">
-				<div class="testimonial-item">
-				  <img src="images/arun-singhal.png" alt="Arun Singhal" class="testimonial-img">
-				  <h3>Arun Singhal</h3>
-				  <h4>Managing Partner</h4>
-				  <div class="stars">
-					<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-				  </div>
-				  <p class="testimonial-text">
-					“It was wonderful working with you, Ankit, over the last two months. We were lucky to have you with us to help us strategize and implement as well to improve our presence on Udemy. You were one of our best Brand Management Interns!”
-				  </p>
+		<div class="container" data-aos="fade-up">
+			<!-- Section Title -->
+			<div class="row">
+				<div class="col-md-10 mx-auto heading-section text-center ftco-animate">
+					<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">Testimonials</h2>
 				</div>
-			  </div>
 			</div>
-			<div class="pagination"></div>
-		  </div>
+
+			<div class="testimonials-slider">
+				<div class="slides">
+					<!-- Slide 1 -->
+					<div class="slide">
+						<div class="testimonial-item">
+							<img src="images/arun-singhal.png" alt="Arun Singhal" class="testimonial-img">
+							<h3>Arun Singhal</h3>
+							<h4>Managing Partner</h4>
+							<div class="stars">
+								<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+							</div>
+							<p class="testimonial-text">
+								“It was wonderful working with you, Ankit, over the last two months. We were lucky to
+								have you with us to help us strategize and implement as well to improve our presence on
+								Udemy. You were one of our best Brand Management Interns!”
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="pagination"></div>
+			</div>
 		</div>
 	</section>
 
@@ -786,62 +800,31 @@
 
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<a href="https://www.linkedin.com/in/ankit-akash-kalita-bb34661b0/" target="_blank"
+						class="text-light mx-2">
+						<i class="fab fa-linkedin fa-lg"></i>
+					</a>
+					<a href="https://github.com/ankito090" target="_blank" class="text-light mx-2">
+						<i class="fab fa-github fa-lg"></i>
+					</a>
+					<a href="https://www.kaggle.com/ankitakashkalita" target="_blank" class="text-light mx-2">
+						<i class="fab fa-kaggle fs-4 fa-lg"></i>
+					</a>
+					<a href="https://www.instagram.com/ankito090/" target="_blank" class="text-light mx-2">
+						<i class="fab fa-instagram fa-lg"></i>
+					</a>
+					<!-- Add more as needed -->
 				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
-										View, San Francisco, California, USA</span></li>
-								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
-											210</span></a></li>
-								<li><a href="#"><span class="icon icon-envelope"></span><span
-											class="text">info@yourdomain.com</span></a></li>
-							</ul>
-						</div>
-					</div>
+			</div>
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-md-12 text-center">
+					<p>&copy; 2025 Ankit Akash Kalita. All rights reserved.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
-
 					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
@@ -852,6 +835,7 @@
 				</div>
 			</div>
 		</div>
+
 	</footer>
 
 
@@ -935,40 +919,40 @@
 		});
 	</script>
 
-<script>
-	document.addEventListener('DOMContentLoaded', function(){
-	  const slidesContainer = document.querySelector('#testimonials .slides');
-	  const slides = Array.from(document.querySelectorAll('#testimonials .slide'));
-	  const pagination = document.querySelector('#testimonials .pagination');
-	  let current = 0, timer;
-  
-	  // build pagination bullets
-	  slides.forEach((_, i) => {
-		const b = document.createElement('span');
-		b.className = 'bullet' + (i===0? ' active':'');
-		b.addEventListener('click', () => { goTo(i); reset(); });
-		pagination.appendChild(b);
-	  });
-  
-	  function goTo(idx) {
-		slidesContainer.style.transform = 'translateX(-'+ (idx*100) +'%)';
-		pagination.querySelectorAll('.bullet').forEach((b,j)=> b.classList.toggle('active', j===idx));
-		current = idx;
-	  }
-  
-	  function next() {
-		goTo((current+1) % slides.length);
-	  }
-  
-	  function reset() {
-		clearInterval(timer);
-		timer = setInterval(next, 5000);
-	  }
-  
-	  // start autoplay
-	  timer = setInterval(next, 5000);
-	});
-  </script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const slidesContainer = document.querySelector('#testimonials .slides');
+			const slides = Array.from(document.querySelectorAll('#testimonials .slide'));
+			const pagination = document.querySelector('#testimonials .pagination');
+			let current = 0, timer;
+
+			// build pagination bullets
+			slides.forEach((_, i) => {
+				const b = document.createElement('span');
+				b.className = 'bullet' + (i === 0 ? ' active' : '');
+				b.addEventListener('click', () => { goTo(i); reset(); });
+				pagination.appendChild(b);
+			});
+
+			function goTo(idx) {
+				slidesContainer.style.transform = 'translateX(-' + (idx * 100) + '%)';
+				pagination.querySelectorAll('.bullet').forEach((b, j) => b.classList.toggle('active', j === idx));
+				current = idx;
+			}
+
+			function next() {
+				goTo((current + 1) % slides.length);
+			}
+
+			function reset() {
+				clearInterval(timer);
+				timer = setInterval(next, 5000);
+			}
+
+			// start autoplay
+			timer = setInterval(next, 5000);
+		});
+	</script>
 
 </body>
 

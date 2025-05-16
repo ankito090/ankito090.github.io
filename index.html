@@ -215,6 +215,35 @@
 		.bullet.active {
 			background: #ffc107;
 		}
+		.navbar {
+		  position: fixed;
+		  width: 100%;
+		  top: 0;
+		  z-index: 1000;
+		  background: rgba(0,0,0,0.95);
+		}
+
+		body {
+		  padding-top: 60px;
+		}
+
+		@media (max-width: 767px) {
+		  .navbar-collapse {
+		    background: rgba(0,0,0,0.95);
+		    padding: 20px;
+		  }
+	  
+		  /* Add this to existing testimonial-item rule */
+		  .testimonial-item {
+		    min-height: 500px;
+		    height: auto;
+		  }
+		}
+
+		html, body {
+		  overflow-x: hidden;
+		  height: auto!important;
+		}
 	</style>
 
 
@@ -226,9 +255,10 @@
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Ankit Akash Kalita</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			  data-target="#ftco-nav" aria-controls="ftco-nav" 
+			  aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
@@ -951,6 +981,17 @@
 
 			// start autoplay
 			timer = setInterval(next, 5000);
+		});
+	</script>
+
+	<script>
+		// Mobile menu close on click
+		document.querySelectorAll('.nav-link').forEach(link => {
+		  link.addEventListener('click', () => {
+			if(window.innerWidth < 768) {
+			  document.querySelector('.navbar-collapse').classList.remove('show');
+			}
+		  });
 		});
 	</script>
 

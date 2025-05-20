@@ -24,31 +24,32 @@
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		.about .content h2 {
-		  font-weight: 700;
-		  font-size: 24px;
+			font-weight: 700;
+			font-size: 24px;
 		}
 
 		.about .content ul {
-		  list-style: none;
-		  padding: 0;
+			list-style: none;
+			padding: 0;
 		}
 
 		.about .content ul li {
-		  margin-bottom: 20px;
-		  display: flex;
-		  align-items: center;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
 		}
 
 		.about .content ul strong {
-		  margin-right: 10px;
+			margin-right: 10px;
 		}
 
 		.about .content ul i {
-		  font-size: 16px;
-		  margin-right: 5px;
-		  color: var(--accent-color);
-		  line-height: 0;
+			font-size: 16px;
+			margin-right: 5px;
+			color: var(--accent-color);
+			line-height: 0;
 		}
+
 		.resume-item {
 			padding: 0 0 20px 20px;
 			margin-top: -2px;
@@ -169,7 +170,7 @@
 			max-width: 600px;
 			margin: auto;
 			text-align: center;
-			height: 500px;
+			height: 510px;
 			/* fixed height */
 			display: flex;
 			flex-direction: column;
@@ -212,6 +213,7 @@
 		}
 
 		.testimonial-text {
+			position: relative;
 			color: white;
 			margin-bottom: 15px;
 			overflow: hidden;
@@ -241,131 +243,138 @@
 		.bullet.active {
 			background: #ffc107;
 		}
+
 		.navbar {
-		  position: fixed;
-		  width: 100%;
-		  top: 0;
-		  z-index: 1000;
-		  background: rgba(0,0,0,0.95);
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 1000;
+			background: rgba(0, 0, 0, 0.95);
 		}
-		html, body {
-		    overflow-x: hidden;
-		    max-width: 100vw;
+
+		html,
+		body {
+			overflow-x: hidden;
+			max-width: 100vw;
 		}
 
 		.container {
-		    padding-right: 15px;
-		    padding-left: 15px;
-		    margin-right: auto;
-		    margin-left: auto;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
 		}
-		
+
 		.hero {
-		  width: 100%;
-		  min-height: calc(100vh - 0px);
-		  position: relative;
-		  padding: 80px 0;
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
+			width: 100%;
+			min-height: calc(100vh - 0px);
+			position: relative;
+			padding: 80px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		@media (max-width: 1200px) {
-		  .hero {
-		    min-height: calc(100vh - 0px);
-		  }
+			.hero {
+				min-height: calc(100vh - 0px);
+			}
 		}
 
 		.hero img {
-		  position: absolute;
-		  inset: 0;
-		  display: block;
-		  width: 100%;
-		  height: 100%;
-		  object-fit: cover;
-		  z-index: 1;
+			position: absolute;
+			inset: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: 1;
 		}
 
 		.hero .container {
-		  position: relative;
-		  z-index: 3;
+			position: relative;
+			z-index: 3;
 		}
 
 		.hero h2 {
-		  margin: 0;
-		  font-size: 48px;
-		  font-weight: 700;
+			margin: 0;
+			font-size: 48px;
+			font-weight: 700;
 		}
 
 		.hero p {
-		  margin: 10px 0 0 0;
-		  font-size: 24px;
-		  color: var(--heading-color);
+			margin: 10px 0 0 0;
+			font-size: 24px;
+			color: var(--heading-color);
 		}
 
 		.hero .btn-get-started {
-		  color: var(--contrast-color);
-		  background: var(--accent-color);
-		  font-family: var(--heading-font);
-		  text-transform: uppercase;
-		  font-weight: 600;
-		  font-size: 12px;
-		  letter-spacing: 1px;
-		  display: inline-block;
-		  padding: 12px 40px;
-		  border-radius: 50px;
-		  transition: 0.5s;
-		  margin-top: 30px;
+			color: var(--contrast-color);
+			background: var(--accent-color);
+			font-family: var(--heading-font);
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 12px;
+			letter-spacing: 1px;
+			display: inline-block;
+			padding: 12px 40px;
+			border-radius: 50px;
+			transition: 0.5s;
+			margin-top: 30px;
 		}
 
 		.hero .btn-get-started:hover {
-		  background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
+			background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
 		}
 
 		@media (max-width: 768px) {
-		  .hero h2 {
-		    font-size: 32px;
-		  }
-	  
-		  .hero p {
-		    font-size: 18px;
-		  }
+			.hero h2 {
+				font-size: 32px;
+			}
+
+			.hero p {
+				font-size: 18px;
+			}
 		}
 
 		.object-fit-cover {
-		    object-fit: cover;
-		    width: 100%;
-		    height: 100%;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
 		}
 
 		#hero img {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  object-fit: cover;       /* crop/scale to cover entire area */
-		  z-index: -1;              /* send it behind the text */
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			/* crop/scale to cover entire area */
+			z-index: -1;
+			/* send it behind the text */
 		}
-		
-		@media (max-width: 767px) {
-		  /* Responsive section headings */
-		  .heading-section h2.mb-4 {
-		    font-size: 2.5rem !important; /* ~40px */
-		    line-height: 1.2;
-		    word-break: keep-all;
-		    padding: 0 15px;
-		  }
-	    
-		  /* Hero section text adjustments */
-		  .hero-content h2 {
-		    font-size: 2rem !important;
-		  }
 
-		  .hero-content p {
-		    font-size: 1.5rem !important;
-		  }
-}
+		@media (max-width: 767px) {
+
+			/* Responsive section headings */
+			.heading-section h2.mb-4 {
+				font-size: 2.5rem !important;
+				/* ~40px */
+				line-height: 1.2;
+				word-break: keep-all;
+				padding: 0 15px;
+			}
+
+			/* Hero section text adjustments */
+			.hero-content h2 {
+				font-size: 2rem !important;
+			}
+
+			.hero-content p {
+				font-size: 1.5rem !important;
+			}
+		}
 	</style>
 
 
@@ -374,351 +383,359 @@
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 	<div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-			<div class="container" >
-				<a class="navbar-brand" href="index.html" >Ankit Akash Kalita</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" 
-			data-target="#ftco-nav" aria-controls="ftco-nav" 
-			aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		
-		<div class="collapse navbar-collapse" id="ftco-nav">
-			<ul class="navbar-nav nav ml-auto">
-				<li class="nav-item"><a href="#hero" class="nav-link"><span>Home</span></a></li>
-				<li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#ftco-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#testimonials" class="nav-link"><span>Testimonials</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-    <!-- ========== Hero Section ========== -->
-	<section id="hero" class="hero section position-relative p-0">
-	<!-- Full‑width, fluid image; section height auto‑adjusts to image height -->
-		<img
-		  src="images/my-picture_1.jpg"
-		  alt="My Picture"
-		  class="img-fluid w-100"
-		  data-aos="fade-in"
-		/>
-  
-	<!-- Overlayed text, centered -->
-	<div
-	  class="hero-content position-absolute top-50 start-50 translate-middle text-center w-100"
-	  data-aos="zoom-out"
-	  data-aos-delay="100"
-	>
-	  <span style="color: white; font-size: 20px;">Hello!</span>
-	  <h2 style="font-size: 60px;">
-		<span style="color: white; font-weight: lighter;">I'm </span><span style="color: #ffc107;">Ankit Akash Kalita</span>
-	  </h2>
-	  <p style="color: white; font-size: 30px;">An Aspirant Data Analyst</p>
-	</div>
-  </section>
-  <!-- ================================ -->
-	  
-  	<section id="about" class="ftco-section ftco-no-pb" class="about section">
-		<!-- Section Title -->
-		<div class="row justify-content-center pb-5">
-			<div class="col-md-10 heading-section text-center ftco-animate">
-				<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">About Me</h2>
-			</div>
-		</div>
-	
-		<div class="container" data-aos="fade-up" data-aos-delay="100">
-			<div class="row gy-4 justify-content-center align-items-stretch"> <!-- Added align-items-stretch -->
-				<div class="mb-4" class="col-lg-6 d-flex"> <!-- Added d-flex -->
-					<img src="images/my-picture_2.jpg" 
-						 class="img-fluid h-100 object-fit-cover" 
-						 alt="" 
-						 style="max-height: 400px;"> <!-- Added height constraints -->
-				</div>
-				<div class="col-lg-6 content d-flex align-items-center"> <!-- Added flex alignment -->
-					<div class="w-100"> <!-- Added wrapper div -->
-						<ul class="list-unstyled m-0"> <!-- Removed default list styling -->
-							<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong style="color: #ddd;">Name:</strong> <span style="color: #ffc107;">Ankit Akash Kalita</span></li>
-							<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong style="color: #ddd;">Date of birth:</strong> <span style="color: #ffc107;">January 10, 2003</span></li>
-							<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong style="color: #ddd;">City:</strong> <span style="color: #ffc107;">Guwahati, Assam, India</span></li>
-							<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong style="color: #ddd;">Email:</strong> <span style="color: #ffc107;">ankitakashkalita2002@gmail.com</span></li>
-							<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong style="color: #ddd;">Phone:</strong> <span style="color: #ffc107;">+91 70020 15471</span></li>
-							<p style="color: #ddd;">
-								I enjoy working on real-world data projects and exploring ways to solve business problems by transforming raw data into clear, actionable insights. Whether it’s cleaning messy datasets or crafting interactive dashboards, I’m always looking to learn more and grow my data analytics skills.
-							</p>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+			id="ftco-navbar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Ankit Akash Kalita</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+					aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
+				<div class="collapse navbar-collapse" id="ftco-nav">
+					<ul class="navbar-nav nav ml-auto">
+						<li class="nav-item"><a href="#hero" class="nav-link"><span>Home</span></a></li>
+						<li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
+						<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+						<li class="nav-item"><a href="#ftco-section" class="nav-link"><span>Skills</span></a></li>
+						<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+						<li class="nav-item"><a href="#testimonials" class="nav-link"><span>Testimonials</span></a></li>
+						<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ========== Hero Section ========== -->
+		<section id="hero" class="hero section position-relative p-0">
+			<!-- Full‑width, fluid image; section height auto‑adjusts to image height -->
+			<img src="images/my-picture_1.jpg" alt="My Picture" class="img-fluid w-100" data-aos="fade-in" />
+
+			<!-- Overlayed text, centered -->
+			<div class="hero-content position-absolute top-50 start-50 translate-middle text-center w-100"
+				data-aos="zoom-out" data-aos-delay="100">
+				<span style="color: white; font-size: 20px;">Hello!</span>
+				<h2 style="font-size: 60px;">
+					<span style="color: white; font-weight: lighter;">I'm </span><span style="color: #ffc107;">Ankit
+						Akash Kalita</span>
+				</h2>
+				<p style="color: white; font-size: 30px;">An Aspirant Data Analyst</p>
+			</div>
+		</section>
+		<!-- ================================ -->
+
+		<section id="about" class="ftco-section ftco-no-pb" class="about section">
+			<!-- Section Title -->
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">Resume</h2>
+					<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">About Me</h2>
 				</div>
 			</div>
-			<div class="row">
 
-				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-					<h3 class="resume-title">Summary</h3>
-					<div class="resume-item pb-0 no-timeline">
-						<h4>Ankit Akash Kalita</h4>
-						<p><em>Recent BBA (General) graduate with a strong foundation in data analytics. Passionate
-								about transforming raw data into actionable insights using tools such as Spreadsheets
-								Software, SQL, BI Tools, and Programming Languages. Seeking opportunities to apply my
-								skills in real-world data analytics projects, gain practical experience, and contribute
-								to organizational success.</em></p>
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+				<div class="row gy-4 justify-content-center align-items-stretch"> <!-- Added align-items-stretch -->
+					<div class="mb-4" class="col-lg-6 d-flex"> <!-- Added d-flex -->
+						<img src="images/my-picture_2.jpg" class="img-fluid h-100 object-fit-cover" alt=""
+							style="max-height: 400px;"> <!-- Added height constraints -->
 					</div>
-
-					<h3 class="resume-title" style="margin-top: 60px;">Education</h3>
-					<div class="resume-timeline">
-						<div class="resume-item">
-							<h4>Bachelor of Business Administration</h4>
-							<h5>2021 - 2024</h5>
-							<p><em>Assam downtown University</em></p>
-						</div>
-						<div class="resume-item">
-							<h4>Class 12th</h4>
-							<h5>2021</h5>
-							<p><em>Maharishi Vidya Mandir-IV</em></p>
-						</div>
-						<div class="resume-item">
-							<h4>Class 10th</h4>
-							<h5>2019</h5>
-							<p><em>Maharishi Vidya Mandir-V</em></p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-					<h3 class="resume-title">Professional Experience</h3>
-					<div class="resume-timeline">
-						<div class="resume-item">
-							<h4>Brand Management Intern</h4>
-							<h5>Jul 2023 - Aug 2023</h5>
-							<p><em>Enrichmentors, Mumbai, Maharashtra, India</em></p>
-							<ul>
-								<li>Designed and executed brand strategies to tackle challenges and enhance the brand
-									image.</li>
-								<li>Analyzed the underlying causes of challenges and reformulated the existing
-									strategies.</li>
-								<li>Tested the revised strategies using data-driven insights and made improvements as
-									needed.</li>
+					<div class="col-lg-6 content d-flex align-items-center"> <!-- Added flex alignment -->
+						<div class="w-100"> <!-- Added wrapper div -->
+							<ul class="list-unstyled m-0"> <!-- Removed default list styling -->
+								<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong
+										style="color: #ddd;">Name:</strong> <span style="color: #ffc107;">Ankit Akash
+										Kalita</span></li>
+								<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong style="color: #ddd;">Date
+										of birth:</strong> <span style="color: #ffc107;">January 10, 2003</span></li>
+								<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong
+										style="color: #ddd;">City:</strong> <span style="color: #ffc107;">Guwahati,
+										Assam, India</span></li>
+								<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong
+										style="color: #ddd;">Email:</strong> <span
+										style="color: #ffc107;">ankitakashkalita2002@gmail.com</span></li>
+								<li class="mb-4"><i class="bi bi-chevron-right"></i> <strong
+										style="color: #ddd;">Phone:</strong> <span style="color: #ffc107;">+91 70020
+										15471</span></li>
+								<p style="color: #ddd;">
+									I enjoy working on real-world data projects and exploring ways to solve business
+									problems by transforming raw data into clear, actionable insights. Whether it’s
+									cleaning messy datasets or crafting interactive dashboards, I’m always looking to
+									learn more and grow my data analytics skills.
+								</p>
 							</ul>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
 
-					<h3 class="resume-title" style="margin-top: 60px;">Certifications</h3>
-					<div class="resume-timeline">
+		<section class="ftco-section ftco-no-pb" id="resume-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+					<div class="col-md-10 heading-section text-center ftco-animate">
+						<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">Resume</h2>
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+						<h3 class="resume-title">Summary</h3>
 						<div class="resume-item pb-0 no-timeline">
-							<ul>
-								<li>
-									<a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/G0H9Q5Z0HAL8"
-										target="_blank" style="color: white;">
-										Google Data Analytics Professional Certificate – Google
-									</a>
-								</li>
-								<li>
-									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KZ7QBG0DPZ8H"
-										target="_blank" style="color: white;">
-										Excel Skills for Data Analytics and Visualization – Macquarie University
-									</a>
-								</li>
-								<li>
-									<a href="https://cs50.harvard.edu/certificates/9dd04d85-7ae2-49e0-87fd-62812e9668f5"
-										target="_blank" style="color: white;">
-										CS50's Introduction to Databases with SQL – Harvard University
-									</a>
-								</li>
-								<li>
-									<a href="https://cs50.harvard.edu/certificates/a7f0c417-4264-40cb-8b52-40553219b80e"
-										target="_blank" style="color: white;">
-										CS50's Introduction to Programming with Python – Harvard University
-									</a>
-								</li>
-								<li>
-									<a href="https://cs50.harvard.edu/certificates/9a841a0a-db3a-44ec-a085-f1ff081c109c"
-										target="_blank" style="color: white;">
-										CS50's Introduction to Programming with R – Harvard University
-									</a>
-								</li>
-							</ul>
+							<h4>Ankit Akash Kalita</h4>
+							<p><em>Recent BBA (General) graduate with a strong foundation in data analytics. Passionate
+									about transforming raw data into actionable insights using tools such as
+									Spreadsheets
+									Software, SQL, BI Tools, and Programming Languages. Seeking opportunities to apply
+									my
+									skills in real-world data analytics projects, gain practical experience, and
+									contribute
+									to organizational success.</em></p>
 						</div>
+
+						<h3 class="resume-title" style="margin-top: 60px;">Education</h3>
+						<div class="resume-timeline">
+							<div class="resume-item">
+								<h4>Bachelor of Business Administration</h4>
+								<h5>2021 - 2024</h5>
+								<p><em>Assam downtown University</em></p>
+							</div>
+							<div class="resume-item">
+								<h4>Class 12th</h4>
+								<h5>2021</h5>
+								<p><em>Maharishi Vidya Mandir-IV</em></p>
+							</div>
+							<div class="resume-item">
+								<h4>Class 10th</h4>
+								<h5>2019</h5>
+								<p><em>Maharishi Vidya Mandir-V</em></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+						<h3 class="resume-title">Professional Experience</h3>
+						<div class="resume-timeline">
+							<div class="resume-item">
+								<h4>Brand Management Intern</h4>
+								<h5>Jul 2023 - Aug 2023</h5>
+								<p><em>Enrichmentors, Mumbai, Maharashtra, India</em></p>
+								<ul>
+									<li>Designed and executed brand strategies to tackle challenges and enhance the
+										brand
+										image.</li>
+									<li>Analyzed the underlying causes of challenges and reformulated the existing
+										strategies.</li>
+									<li>Tested the revised strategies using data-driven insights and made improvements
+										as
+										needed.</li>
+								</ul>
+							</div>
+						</div>
+
+						<h3 class="resume-title" style="margin-top: 60px;">Certifications</h3>
+						<div class="resume-timeline">
+							<div class="resume-item pb-0 no-timeline">
+								<ul>
+									<li>
+										<a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/G0H9Q5Z0HAL8"
+											target="_blank" style="color: white;">
+											Google Data Analytics Professional Certificate – Google
+										</a>
+									</li>
+									<li>
+										<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KZ7QBG0DPZ8H"
+											target="_blank" style="color: white;">
+											Excel Skills for Data Analytics and Visualization – Macquarie University
+										</a>
+									</li>
+									<li>
+										<a href="https://cs50.harvard.edu/certificates/9dd04d85-7ae2-49e0-87fd-62812e9668f5"
+											target="_blank" style="color: white;">
+											CS50's Introduction to Databases with SQL – Harvard University
+										</a>
+									</li>
+									<li>
+										<a href="https://cs50.harvard.edu/certificates/a7f0c417-4264-40cb-8b52-40553219b80e"
+											target="_blank" style="color: white;">
+											CS50's Introduction to Programming with Python – Harvard University
+										</a>
+									</li>
+									<li>
+										<a href="https://cs50.harvard.edu/certificates/9a841a0a-db3a-44ec-a085-f1ff081c109c"
+											target="_blank" style="color: white;">
+											CS50's Introduction to Programming with R – Harvard University
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center mt-5">
+					<div class="col-md-6 text-center ftco-animate">
+						<p><a href="https://drive.usercontent.google.com/download?id=11Ez00KP8L3TGm6Q0JLEIpDR5GKb_rDM8&export=download&authuser=0"
+								class="btn btn-primary py-4 px-5">Download CV</a></p>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="https://drive.usercontent.google.com/download?id=11Ez00KP8L3TGm6Q0JLEIpDR5GKb_rDM8&export=download&authuser=0"
-							class="btn btn-primary py-4 px-5">Download CV</a></p>
+		</section>
+
+
+		<section id="ftco-section" class="skills section">
+
+			<!-- Section Title -->
+			<div class="row">
+				<div class="col-md-10 mx-auto heading-section text-center ftco-animate">
+					<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">My Skills</h2>
 				</div>
 			</div>
-		</div>
-	</section>
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
 
+				<div class="row skills-content skills-animation">
 
-	<section id="ftco-section" class="skills section">
-
-		<!-- Section Title -->
-		<div class="row">
-			<div class="col-md-10 mx-auto heading-section text-center ftco-animate">
-				<h2 class="mb-4" style="color: #ffc107; font-size: 60px;">My Skills</h2>
-			</div>
-		</div>
-		<div class="container" data-aos="fade-up" data-aos-delay="100">
-
-			<div class="row skills-content skills-animation">
-
-				<div class="col-lg-6">
-					<div class="progress" style="margin-bottom: 25px;">
-						<span class="skill">
-							<span>
-								<img src="images/excel-icon.png"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								Microsoft Excel
+					<div class="col-lg-6">
+						<div class="progress" style="margin-bottom: 25px;">
+							<span class="skill">
+								<span>
+									<img src="images/excel-icon.png"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									Microsoft Excel
+								</span>
+								<i class="val">95%</i>
 							</span>
-							<i class="val">95%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div><!-- End Skills Item -->
-				</div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
+						</div><!-- End Skills Item -->
+					</div>
 
-				<div class="col-lg-6">
-					<div class="progress" style="margin-bottom: 25px;">
-						<span class="skill">
-							<span>
-								<img src="images/google_sheets-icon.png" alt="Google Sheets Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								Google Sheets
+					<div class="col-lg-6">
+						<div class="progress" style="margin-bottom: 25px;">
+							<span class="skill">
+								<span>
+									<img src="images/google_sheets-icon.png" alt="Google Sheets Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									Google Sheets
+								</span>
+								<i class="val">70%</i>
 							</span>
-							<i class="val">70%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="progress" style="margin-bottom: 25px;">
-						<span class="skill">
-							<span>
-								<img src="images/powerbi-icon.png" alt="Power BI Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								Power BI
+					<div class="col-lg-6">
+						<div class="progress" style="margin-bottom: 25px;">
+							<span class="skill">
+								<span>
+									<img src="images/powerbi-icon.png" alt="Power BI Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									Power BI
+								</span>
+								<i class="val">80%</i>
 							</span>
-							<i class="val">80%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="progress" style="margin-bottom: 25px;">
-						<span class="skill">
-							<span>
-								<img src="images/tableau-icon.png" alt="Tableau Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								Tableau
+					<div class="col-lg-6">
+						<div class="progress" style="margin-bottom: 25px;">
+							<span class="skill">
+								<span>
+									<img src="images/tableau-icon.png" alt="Tableau Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									Tableau
+								</span>
+								<i class="val">60%</i>
 							</span>
-							<i class="val">60%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="progress" style="margin-bottom: 25px;">
-						<span class="skill">
-							<span>
-								<img src="images/sqlite-icon.png" alt="SQLite Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								SQLite
+					<div class="col-lg-6">
+						<div class="progress" style="margin-bottom: 25px;">
+							<span class="skill">
+								<span>
+									<img src="images/sqlite-icon.png" alt="SQLite Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									SQLite
+								</span>
+								<i class="val">95%</i>
 							</span>
-							<i class="val">95%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="progress" style="margin-bottom: 25px;">
-						<span class="skill">
-							<span>
-								<img src="images/pgsql-icon.webp" alt="PostgreSQL Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								PostgreSQL
+					<div class="col-lg-6">
+						<div class="progress" style="margin-bottom: 25px;">
+							<span class="skill">
+								<span>
+									<img src="images/pgsql-icon.webp" alt="PostgreSQL Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									PostgreSQL
+								</span>
+								<i class="val">80%</i>
 							</span>
-							<i class="val">80%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="progress">
-						<span class="skill">
-							<span>
-								<img src="images/python-icon.png" alt="Python Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								Python (for Data Analysis)
+					<div class="col-lg-6">
+						<div class="progress">
+							<span class="skill">
+								<span>
+									<img src="images/python-icon.png" alt="Python Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									Python (for Data Analysis)
+								</span>
+								<i class="val">80%</i>
 							</span>
-							<i class="val">80%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="progress">
-						<span class="skill">
-							<span>
-								<img src="images/r-icon.png" alt="R Icon"
-									style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-								R
+					<div class="col-lg-6">
+						<div class="progress">
+							<span class="skill">
+								<span>
+									<img src="images/r-icon.png" alt="R Icon"
+										style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+									R
+								</span>
+								<i class="val">85%</i>
 							</span>
-							<i class="val">85%</i>
-						</span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100"></div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</div>
 
+
+				</div>
 
 			</div>
 
-		</div>
+	</div>
 
-		</div>
-
-		</div>
+	</div>
 
 	</section><!-- /Skills Section -->
 
